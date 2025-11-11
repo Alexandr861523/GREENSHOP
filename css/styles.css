@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    margin-bottom: 40px;
+}
+
+.register-title {
+    display: block;
+    text-align: center;
+    color: #46A358;
+}
+
+.register-button {
+    width: 300px;
+    height: 45px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    margin-top: 41px; 
+}
+
+.register-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #3D3D3D;
+    text-align: center;
+}
+
+.networks-text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #727272;
+    
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px;
+    
+}
+
+.form-container input {
+    width: 300px;
+    height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.networks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px;
+}
+
+.networks-button {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

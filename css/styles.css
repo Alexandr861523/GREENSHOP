@@ -85,3 +85,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.login-title {
+    display: block;
+    text-align: center;
+    color: #46A358;
+}

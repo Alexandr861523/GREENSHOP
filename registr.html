@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
-    <style>
-        a, span{
-            text-decoration: none;
-            text-transform: uppercase;
-            
-        }
-        span {
-             color: green;
-            
-        }
-    </style>
+    
+    
 </head>
 <body>
-    <form action=".">
-        <a href="login.html">Login</a>
-        <span>Registration</span>
-    <p>Enter your email and password to register.</p>
-    <input type="text" placeholder="Username">
-    <input type="email" placeholder="Enter your email address">
-    <input type="password" placeholder="Password">
-    <input type="password" placeholder="Confirm Password">
-    <button type="submit">Register</button>
     
-    </form>
-    <p>Or register with</p>
-    <button>
-        <img src="images/icon-google.svg" alt="icon-google">
-        <span>Continue with Google</span>
-    </button>
-    <button>
-        <img src="images/icon-facebook.svg" alt="icon-facebook">
-        <span>Continue with Facebook</span>
-    </button>
+      <form action=".">
+        <div class="page-title">
+            <a href="login.html">Login</a>
+            <span class="register-title">Registration</span>
+        </div>
+        
+        <p class="register-text">Enter your email and password to register.</p>
+        <div class="form-container">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Enter your email address">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+        </div>
+    
+        <button type="submit" class="register-button">Register</button>
+    
+      </form>
+          <p class="register-text">Or register with</p>
+      <div class="networks">
+        <button class="networks-button">
+            <img src="images/icon-google.svg" alt="icon-google">
+            <span class="networks-text">Continue with Google</span>
+        </button>
+        <button class="networks-button">
+            <img src="images/icon-facebook.svg" alt="icon-facebook">
+            <span class="networks-text">Continue with Facebook</span>
+        </button>
+       </div>
+    
+    
+    
     
     
 </body>

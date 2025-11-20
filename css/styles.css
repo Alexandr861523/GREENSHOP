@@ -1,10 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+   
 }
 
 .page-title {
@@ -29,7 +29,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    letter-spacing: 0%;
+   
     margin-top: 41px; 
 }
 
@@ -37,7 +37,7 @@ body {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    letter-spacing: 0%;
+    
     color: #3D3D3D;
     text-align: center;
 }
@@ -46,7 +46,7 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    letter-spacing: 0%;
+    
     color: #727272;
     
 }
@@ -91,3 +91,163 @@ body {
     text-align: center;
     color: #46A358;
 }
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.picture {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+}
+
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.header-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 260px);
+    text-align: center;
+    
+}
+
+.header-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.navigation-list {
+    list-style: none;    
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.header-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 76px; 
+    text-decoration: none;
+    margin-right: 50px;
+        
+}
+
+.header-item:last-child {
+    margin-right: 0;
+            
+}
+
+.menu-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    
+    color: #3D3D3D;
+}
+
+.activ {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+   
+    color: #3D3D3D;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 25px;
+    
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+  
+    color: #3D3D3D;
+    margin-top: 7px;
+}
+
+.mark {
+    color: #46A358;
+}
+
+.welcome-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #3D3D3D;
+    margin-top: 68px;
+}
+
+.description-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    
+    color: #727272;
+}
+
+.shop-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #46A358;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 44px;
+}
+
+.login-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: #46A358;
+    text-decoration: none;
+    gap: 4px;
+        
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;            
+    justify-content: center;
+        
+}
+
+.networks {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,12 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-   
-}
-
 .page-title {
     display: flex;
     justify-content: center;
@@ -145,7 +136,7 @@ body {
 .header-item {
     display: inline-block;
     vertical-align: middle;
-    width: 76px; 
+    
     text-decoration: none;
     margin-right: 50px;
         
@@ -165,6 +156,10 @@ body {
     color: #3D3D3D;
 }
 
+.menu-link:hover {
+    font-weight: 600;
+}
+
 .activ {
     text-decoration: none;
     font-weight: 700;
@@ -175,6 +170,11 @@ body {
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
     
+}
+
+.activ:hover {
+    font-weight: 900;
+    color: blue;
 }
 
 .section-title {
@@ -223,6 +223,10 @@ body {
     margin-top: 44px;
 }
 
+.shop-btn:hover {
+    background-color: #3D8F4A;
+}
+
 .login-btn {
     display: inline-flex;
     justify-content: center;
@@ -237,7 +241,11 @@ body {
         
 }
 
-.my-form {
+.login-btn:hover {
+    background-color: #3D8F4A;
+}
+
+.my-form, .networks  {
     display: flex;
     flex-direction: column;
     align-items: center;            
@@ -245,9 +253,5 @@ body {
         
 }
 
-.networks {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
+
 

@@ -86,6 +86,7 @@
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .container {
@@ -172,10 +173,7 @@
     
 }
 
-.activ:hover {
-    font-weight: 900;
-    color: blue;
-}
+
 
 .section-title {
     font-weight: 900;

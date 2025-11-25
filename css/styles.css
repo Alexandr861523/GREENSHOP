@@ -295,8 +295,7 @@ body {
 }
 
 .container-plants {
-    width: 1200px;
-    margin: 0 auto;
+   
     margin-top: 50px;
 }
 
@@ -387,7 +386,7 @@ body {
     font-weight: 700;
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
-    padding-bottom: 25px;
+    padding-bottom: 7px;
 }
 
 
@@ -400,9 +399,9 @@ body {
 
 .active:hover {
     
-    color: #3D3D3D;
+    color: #46A358;
     border-bottom: 3px solid #46A358;
-    padding-bottom: 25px;
+    padding-bottom: 7px;
 }
 
 .categories-list {
@@ -430,6 +429,7 @@ body {
 .plant-picture {
     margin-top: 31px;
     background-color: #FBFBFB;
+    width: 33%;
 }
 
 .plant-picture-text {

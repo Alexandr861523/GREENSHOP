@@ -30,8 +30,15 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font: 14px/1.2 "CeraPro", "Arial", "Helvetica", sans-serif;
+    margin: 0 auto;
 }
 
                     /* my form */
@@ -65,7 +72,6 @@ body {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    
     color: #3D3D3D;
     text-align: center;
 }
@@ -74,7 +80,6 @@ body {
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    
     color: #727272;
     
 }
@@ -217,9 +222,9 @@ body {
     font-weight: 900;
     font-size: 70px;
     line-height: 70px;
-  
     color: #3D3D3D;
     margin-top: 7px;
+    text-transform: uppercase;
 }
 
 .mark {
@@ -291,13 +296,7 @@ body {
 
 .container-plants {
     width: 1200px;
-    max-width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 20px;
-    min-height: calc(100vh - 200px);
-    display: block;
-    position: relative;
     margin-top: 50px;
 }
 
@@ -359,14 +358,7 @@ body {
     font-weight: 700;
 }
 
-.first-categories-item {
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    margin-bottom: 20px;
-    color: #46A358;
-    font-weight: 700;
-}
+
 
 .plant-list {
     list-style: none;
@@ -391,21 +383,23 @@ body {
 }
 
 .plant-item:hover {
-    color: #46A358;
+   
     font-weight: 700;
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
 }
 
-.first-plant-item {
+
+
+.active {
     text-decoration: none;
     font-weight: 700;
-    color: #3D3D3D;
+    color: #46A358;
 }
 
-.first-plant-item:hover {
-    color: #46A358;
+.active:hover {
+    
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
@@ -435,6 +429,7 @@ body {
 
 .plant-picture {
     margin-top: 31px;
+    background-color: #FBFBFB;
 }
 
 .plant-picture-text {
@@ -488,13 +483,13 @@ body {
 .pagination a:hover {
     background-color: #46A358;
     color: #fff;
-    border-color: #46A358;
+    border-color: #333;
 }
 
 .pagination a.active {
     background-color: #46A358;
     color: #fff;
-    border-color: #46A358;
+    border-color: #333;
 }
 
 .pagination-wrapper {

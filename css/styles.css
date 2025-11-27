@@ -1,3 +1,47 @@
+@font-face {
+    font-family: "CeraPro";
+    src: url(../fonts/CeraPro-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url(../fonts/CeraPro-Medium.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url(../fonts/CeraPro-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CeraPro";
+    src: url(../fonts/CeraPro-Black.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.2 "CeraPro", "Arial", "Helvetica", sans-serif;
+    margin: 0 auto;
+}
+
+                    /* my form */
 .page-title {
     display: flex;
     justify-content: center;
@@ -28,7 +72,6 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    
     color: #3D3D3D;
     text-align: center;
 }
@@ -37,7 +80,6 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    
     color: #727272;
     
 }
@@ -83,6 +125,7 @@
     color: #46A358;
 }
 
+                          /* header */
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -179,9 +222,9 @@
     font-weight: 900;
     font-size: 70px;
     line-height: 70px;
-  
     color: #3D3D3D;
     margin-top: 7px;
+    text-transform: uppercase;
 }
 
 .mark {
@@ -251,5 +294,207 @@
         
 }
 
+.container-plants {
+   
+    margin-top: 50px;
+}
+
+  
+.container-plants::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-plants-inner {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.container-plants-inner>.row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.plants {
+    width: 100%;
+}
+
+.advertising-list {
+    float: left;
+    width: 310px;
+    margin-left: 30px;
+    
+}
+
+.plant-table {
+    float: right;
+    width: 740px;
+}
+
+.plants::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.categories {
+    margin-bottom: 377px;
+}
+
+.categories-item {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #3D3D3D;
+    font-weight: 400;
+
+}
+
+.categories-item:hover {
+    font-weight: 700;
+}
 
 
+
+.plant-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plant-list li {
+    display: inline-block;
+    margin-right: 37px;
+}
+
+.plant-list li:last-child {
+    margin-right: 0;
+}
+
+.plant-item {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.plant-item:hover {
+   
+    font-weight: 700;
+    color: #3D3D3D;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 7px;
+}
+
+
+
+.active {
+    text-decoration: none;
+    font-weight: 700;
+    color: #46A358;
+}
+
+.active:hover {
+    
+    color: #46A358;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 7px;
+}
+
+.categories-list {
+    list-style: none;
+}
+
+.float {
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.plant-picture {
+    margin-top: 31px;
+    background-color: #FBFBFB;
+    width: 33%;
+}
+
+.plant-picture-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D3D3D;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #46A358;
+    
+}
+  /* pagination */
+
+
+.pagination-wrapper {
+    text-align: right;
+    margin-top: 30px;
+    clear: both;
+    margin-bottom: 50px;
+        
+}
+
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #46A358;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination a.active {
+    background-color: #46A358;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination-wrapper {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    clear: both;
+}

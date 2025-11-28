@@ -41,6 +41,8 @@ body {
     margin: 0 auto;
 }
 
+
+
                     /* my form */
 .page-title {
     display: flex;
@@ -64,7 +66,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-   
     margin-top: 41px; 
 }
 
@@ -130,6 +131,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .container {
@@ -137,58 +142,28 @@ body {
     margin: 0 auto;
 }
 
-.text {
-    display: inline-block;
-    vertical-align: middle;
-    width: 60%;
-}
-
-.picture {
-    display: inline-block;
-    vertical-align: middle;
-    width: 35%;
-}
-
-.header-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 150px;
-}
-
 .header-navigation {
-    display: inline-block;
-    vertical-align: middle;
-    width: calc(100% - 260px);
-    text-align: center;
-    
-}
-
-.header-btn {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100px;
+    flex-grow: 1;
 }
 
 .navigation-list {
     list-style: none;    
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 
 
 .header-item {
-    display: inline-block;
-    vertical-align: middle;
-    
-    text-decoration: none;
-    margin-right: 50px;
+   text-decoration: none;
+   margin-right: 50px;
         
 }
 
 .header-item:last-child {
     margin-right: 0;
-            
 }
 
 .menu-link {
@@ -196,7 +171,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    
     color: #3D3D3D;
 }
 
@@ -216,7 +190,12 @@ body {
     
 }
 
+/* section planet */
 
+.container-planet {
+    display: flex;
+    
+}
 
 .section-title {
     font-weight: 900;
@@ -235,7 +214,6 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    
     color: #3D3D3D;
     margin-top: 68px;
 }
@@ -244,10 +222,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    
     color: #727272;
 }
-
+              
 .shop-btn {
     display: inline-flex;
     justify-content: center;
@@ -293,28 +270,13 @@ body {
     justify-content: center;
         
 }
+               /* section table */
 
 .container-plants {
-   
-    margin-top: 50px;
-}
-
-  
-.container-plants::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.container-plants-inner {
-    display: table;
+    display: flex;
     width: 100%;
-    height: 100%;
-}
-
-.container-plants-inner>.row {
-    display: table-cell;
-    vertical-align: middle;
+    box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .plants {
@@ -322,53 +284,66 @@ body {
 }
 
 .advertising-list {
-    float: left;
-    width: 310px;
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.advertising-picture {
+   margin-top: 179px;
     
 }
 
 .plant-table {
-    float: right;
-    width: 740px;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
-.plants::after {
-    content: "";
-    display: block;
-    clear: both;
+
+
+.picture-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
 }
 
-.categories {
-    margin-bottom: 377px;
+.plant-card {
+    list-style: none;
+    margin-left: 19px;
 }
 
 .categories-item {
-    display: inline-block;
-    vertical-align: middle;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
     color: #3D3D3D;
     font-weight: 400;
-
+    
 }
 
 .categories-item:hover {
     font-weight: 700;
 }
 
-
-
 .plant-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 37px;
+    align-items: center;
 }
 
-.plant-list li {
-    display: inline-block;
-    margin-right: 37px;
-}
+
 
 .plant-list li:last-child {
     margin-right: 0;
@@ -382,54 +357,53 @@ body {
 }
 
 .plant-item:hover {
-   
-    font-weight: 700;
-    color: #3D3D3D;
-    border-bottom: 3px solid #46A358;
-    padding-bottom: 7px;
+   font-weight: 700;
+   color: #3D3D3D;
+   border-bottom: 3px solid #46A358;
+   padding-bottom: 7px;
 }
 
-
-
-.active {
+.active {  
     text-decoration: none;
     font-weight: 700;
     color: #46A358;
 }
 
 .active:hover {
-    
     color: #46A358;
     border-bottom: 3px solid #46A358;
     padding-bottom: 7px;
 }
 
-.categories-list {
+.categories-list li {
     list-style: none;
+    margin-bottom: 20px;
 }
 
 .float {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.float-left {
-    float: left;
-}
+
 
 .float-right {
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
-.float::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.plant-picture {
+.plant-card {
     margin-top: 31px;
+    flex-grow: 1;
+}
+
+.plant-card img {
     background-color: #FBFBFB;
-    width: 33%;
 }
 
 .plant-picture-text {
@@ -443,58 +417,177 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #46A358;
+}
+
+.cards {
+    display: flex;
+    gap: 28px;
+    padding-top: 50px;
+}
+
+.card {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 5px;
+}
+
+.card-img {
+    width: 35%;
+}
+
+.card-img img {
+    margin-top: -30px;
+}
+
+.card-text {
+    text-align: right;
+    width: 65%;
+    flex-grow: 1;
+}
+
+.container-plants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+
+.advertising-list {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plants-right {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+       
+}
+
+
+.plant-table {
+    display: block;
     
 }
-  /* pagination */
 
 
-.pagination-wrapper {
-    text-align: right;
-    margin-top: 30px;
-    clear: both;
-    margin-bottom: 50px;
-        
-}
-
-
-.pagination {
+.picture-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
 }
 
-.pagination li {
-    display: inline-block;
-    margin-left: 10px;
+.find-more {
+    flex: 0 0 100%;
+    order: 999;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
     
 }
 
-.pagination a {
-    display: inline-block;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: all 0.3s;
+.find-more-title {
+    font-weight: 900;
+    color: #3D3D3D;
+    
 }
 
-.pagination a:hover {
-    background-color: #46A358;
-    color: #fff;
-    border-color: #333;
+.find-more-text {
+    font-weight: 400;
+    color: #727272;
+    
+    
+    
+    
 }
 
-.pagination a.active {
-    background-color: #46A358;
-    color: #fff;
-    border-color: #333;
-}
-
-.pagination-wrapper {
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
-    margin-top: 30px;
+    
+}
+
+
+
+.find-more,
+.blog-cards {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 30px auto 0;
+   
+}
+
+
+.find-more {
+    order: 1;
+}
+
+.blog-cards {
+    order: 2;
     margin-bottom: 50px;
-    clear: both;
+    margin-bottom: 138px;
+}
+
+.container-blog {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 44px;
+}
+
+.blog-title {
+   text-align: center;
+}
+
+.blog-text {
+text-align: center;
+margin-bottom: 35px;
+font-weight: 400;
+color: #727272;
+}
+
+.blog-time {
+    color: #46A358;
+    padding-left: 15px;
+}
+
+.blog-link {
+    color: #3D3D3D;
+    padding-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.blog-link:hover {
+    color: #46A358;
+}
+
+.blog-card-title {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.blog-card-text {
+    font-weight: 400;
+    color: #727272;
+    padding-left: 15px;
 }

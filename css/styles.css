@@ -70,7 +70,7 @@ body {
 }
 
 .register-text {
-    font-weight: 400;
+   
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
@@ -100,7 +100,7 @@ body {
     padding-bottom: 12px;
     padding-left: 14px;
     font-size: 14px;
-    font-weight: 400;
+    
     box-sizing: border-box;
 }
 
@@ -168,7 +168,7 @@ body {
 
 .menu-link {
     text-decoration: none;
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 100%;
     color: #3D3D3D;
@@ -219,7 +219,7 @@ body {
 }
 
 .description-text {
-    font-weight: 400;
+    
     font-size: 14px;
     line-height: 24px;
     color: #727272;
@@ -291,7 +291,8 @@ body {
 }
 
 .advertising-picture {
-   margin-top: 179px;
+   margin-top: auto;
+   
     
 }
 
@@ -326,7 +327,7 @@ body {
     text-decoration: none;
     margin-bottom: 90px;
     color: #3D3D3D;
-    font-weight: 400;
+    
     
 }
 
@@ -352,7 +353,7 @@ body {
 .plant-item {
     text-decoration: none;
     color: #3D3D3D;
-    font-weight: 400;
+    
     font-size: 15px;
 }
 
@@ -407,7 +408,7 @@ body {
 }
 
 .plant-picture-text {
-    font-weight: 400;
+    
     font-size: 16px;
     color: #3D3D3D;
     margin-bottom: 6px;
@@ -430,11 +431,10 @@ body {
     display: flex;
     align-items: center;
     padding: 5px 15px 5px 5px;
+    background-color: #FBFBFB;
 }
 
-.card-img {
-    width: 35%;
-}
+
 
 .card-img img {
     margin-top: -30px;
@@ -450,7 +450,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: flex-start;
+    
     width: 100%;
     max-width: 1200px;
     margin: 50px auto 0;
@@ -504,22 +504,38 @@ body {
 .find-more-title {
     font-weight: 900;
     color: #3D3D3D;
+    text-transform: uppercase;
     
 }
 
 .find-more-text {
-    font-weight: 400;
+   
     color: #727272;
-    
-    
-    
     
 }
 
+.card-btn {
+    display: inline-block;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    padding-top: 11px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #3D8F4A;
+}
+
 .card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     text-align: right;
     
 }
@@ -549,8 +565,6 @@ body {
 
 .container-blog {
     display: flex;
-    align-items: center;
-    width: 100%;
     gap: 44px;
 }
 
@@ -561,7 +575,7 @@ body {
 .blog-text {
 text-align: center;
 margin-bottom: 35px;
-font-weight: 400;
+
 color: #727272;
 }
 
@@ -584,10 +598,10 @@ color: #727272;
     font-weight: 700;
     font-size: 20px;
     padding-left: 15px;
-}
+}   
 
 .blog-card-text {
-    font-weight: 400;
+    
     color: #727272;
     padding-left: 15px;
 }

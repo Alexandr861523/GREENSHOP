@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -31,21 +33,21 @@
                     </ul>
                 </nav>
             </div>
-             <div class="header-btn">
+            <div class="header-btn">
                 <a href="registr.html" class="login-btn"><img src="images/icon-logout.svg" alt="icon-logo">Login</a>
-             </div>
-        
+            </div>
+
         </div>
-        
+
     </header>
     <main>
-        <section>
-            <div class="container container-planet">
+        <section class="container container-planet">
                 <div class="text">
                     <p class="welcome-text">Welcome to GreenShop</p>
                     <h1 class="section-title">Let's Make a
                         Better <span class="mark">Planet</span></h1>
-                    <p class="description-text">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique
+                    <p class="description-text">We are an online plant shop offering a wide range of cheap and trendy
+                        plants. Use our plants to create an unique
                         Urban
                         Jungle. Order your favorite plants!</p>
                     <a href="." class="shop-btn">SHOP NOW</a>
@@ -53,225 +55,217 @@
                 <div class="picture">
                     <img src="images/flowers-banner.png" alt="flowers-banner">
                 </div>
-            </div>
-            
         </section>
+
         <section class="container container-plants">
-              <div class="advertising-list">
-                   <div class="categories">
-                     <h2>Categories</h2>
-                       <ul class="categories-list" >
-                         <li>
+            <div class="advertising-list">
+                <div class="categories">
+                    <h2>Categories</h2>
+                    <ul class="categories-list">
+                        <li>
                             <a href="." class="categories-item active">House Plants</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Potter Plants</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Seeds</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Small Plants</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Big Plants</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Succulents</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Trerrariums</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Gardening</a>
-                         </li>
-                         <li>
+                        </li>
+                        <li>
                             <a href="." class="categories-item">Accessories</a>
-                         </li>
-                       </ul>
+                        </li>
+                    </ul>
 
+                </div>
+                <div class="advertising-picture">
+                    <a href=""><img src="images/super-sale-banner.png" alt="super-sale-banner"></a>
+                </div>
+            </div>
+            <div class="plants-right">
+                <div class="plant-table">
+                    <div class="float">
+                        <div class="float-left">
+                            <ul class="plant-list">
+                                <li><a href="." class="plant-item active">All Plants</a></li>
+                                <li><a href="." class="plant-item">New Arrivals</a></li>
+                                <li><a href="." class="plant-item">Sale</a></li>
+                            </ul>
+                        </div>
+                        <div class="float-right">
+                            <label for="sort">Short by:</label>
+                            <select id="sort" name="sort">
+                                <option value="default">Default sorting</option>
+                                <option value="price_low">Price: Low → High</option>
+                                <option value="price_high">Price: High → Low</option>
+                                <option value="newest">Newest</option>
+                            </select>
+                        </div>
                     </div>
-                       <div class="advertising-picture">
-                           <a href=""><img src="images/super-sale-banner.png" alt="super-sale-banner"></a>
-                       </div>
-              </div>
-              <div class="plants-right">
-                                <div class="plant-table">
-                                    <div class="float">
-                                        <div class="float-left">
-                                            <ul class="plant-list">
-                                                <li><a href="." class="plant-item active">All Plants</a></li>
-                                                <li><a href="." class="plant-item">New Arrivals</a></li>
-                                                <li><a href="." class="plant-item">Sale</a></li>
-                                            </ul>
-                                
-                                        </div>
-                                        <div class="float-right">
-                                            <label for="sort">Short by:</label>
-                                            <select id="sort" name="sort">
-                                                <option value="default">Default sorting</option>
-                                                <option value="price_low">Price: Low → High</option>
-                                                <option value="price_high">Price: High → Low</option>
-                                                <option value="newest">Newest</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <ul class="picture-list">
-                                        <li class="plant-card">
-                                            <img src="/images/plant1.png" alt="plant">
-                                            <h3 class="plant-picture-text">Barberton Daisy</h3>
-                                            <span class="price">$119.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant2.png" alt="plant">
-                                            <h3 class="plant-picture-text">Angel Wing Begonia</h3>
-                                            <span class="price">$169.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant3.png" alt="plant">
-                                            <h3 class="plant-picture-text">African Violet</h3>
-                                            <span class="price">$199.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant4.png" alt="plant">
-                                            <h3 class="plant-picture-text">Beach Spider Lily</h3>
-                                            <span class="price">$129.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant5.png" alt="plant">
-                                            <h3 class="plant-picture-text">Blushing Bromeliad</h3>
-                                            <span class="price">$139.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant6.png" alt="plant">
-                                            <h3 class="plant-picture-text">Aluminum Plant</h3>
-                                            <span class="price">$179.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant7.png" alt="plant">
-                                            <h3 class="plant-picture-text">Bird's Nest Fern</h3>
-                                            <span class="price">$99.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant8.png" alt="plant">
-                                            <h3 class="plant-picture-text">Broadleaf Lady Palm</h3>
-                                            <span class="price">$59.00</span>
-                                
-                                        </li>
-                                        <li class="plant-card">
-                                            <img src="/images/plant9.png" alt="plant">
-                                            <h3 class="plant-picture-text">Chinese Evergreen</h3>
-                                            <span class="price">$39.00</span>
-                                
-                                        </li>
-                                    </ul>
-                                     
-                                
-                                </div>
-                                
-                                
-                                
-              </div>
-            
-             
-    <section class="find-more">
-        <div class="cards">
-            <div class="card">
-                <div class="card-img">
-                    <img src="/images/plant14.png" alt="">
+                    <ul class="picture-list">
+                        <li class="plant-card">
+                            <img src="/images/plant1.png" alt="plant">
+                            <h3 class="plant-picture-text">Barberton Daisy</h3>
+                            <span class="price">$119.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant2.png" alt="plant">
+                            <h3 class="plant-picture-text">Angel Wing Begonia</h3>
+                            <span class="price">$169.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant3.png" alt="plant">
+                            <h3 class="plant-picture-text">African Violet</h3>
+                            <span class="price">$199.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant4.png" alt="plant">
+                            <h3 class="plant-picture-text">Beach Spider Lily</h3>
+                            <span class="price">$129.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant5.png" alt="plant">
+                            <h3 class="plant-picture-text">Blushing Bromeliad</h3>
+                            <span class="price">$139.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant6.png" alt="plant">
+                            <h3 class="plant-picture-text">Aluminum Plant</h3>
+                            <span class="price">$179.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant7.png" alt="plant">
+                            <h3 class="plant-picture-text">Bird's Nest Fern</h3>
+                            <span class="price">$99.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant8.png" alt="plant">
+                            <h3 class="plant-picture-text">Broadleaf Lady Palm</h3>
+                            <span class="price">$59.00</span>
+                        </li>
+                        <li class="plant-card">
+                            <img src="/images/plant9.png" alt="plant">
+                            <h3 class="plant-picture-text">Chinese Evergreen</h3>
+                            <span class="price">$39.00</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="card-text">
-                    <h2 class="find-more-title">Summer cactus<br>
-                        & succulents</h2>
-                    <p class="find-more-text">We are an online plant shop offering a wide<br> range of cheap and trendy plants</p>
-                    <a href="." class="card-btn">Find More &rarr;</a>
-                </div>
-    
+                        
             </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="/images/plant15.png" alt="">
-                </div>
-                <div class="card-text">
-                    <h2 class="find-more-title">Styling Trends<br>
-                    & much mores</h2>
-                    <p class="find-more-text">We are an online plant shop offering a wide<br> range of cheap and trendy plants</p>
-                    <a href="." class="card-btn">Find More &rarr;</a>
-                </div>
-    
-            </div>
-        </div>
-    
-    </section>
-
-    <section class="blog-cards">
-        <h2 class="blog-title">Our Blog Posts</h2>
-        <p class="blog-text">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
-        <div class="container-blog">
-            <div>
-                <img src="/images/card01.jpg" alt="plant">
-                <div class="blog-time">
-                    <time datetime="2025-09-12">September 12</time>
-                    <span>I Read in 6 minutes</span>
-                </div>
-                <h3 class="blog-card-title">Cactus & Succulent
-                Care Tips</h3>
-                <p class="blog-card-text">Cacti are succulents are easy care plants for any home or patio.</p>
-                <a href="." class="blog-link">Read More &rarr;</a>
-                
-            </div>
-            <div>
-                <img src="/images/card02.jpg" alt="plant">
-                <div class="blog-time">
-                    <time datetime="2025-09-13">September 13</time>
-                    <span>I Read in 2 minutes</span>
-                </div>
-                <h3 class="blog-card-title">Top 10 Succulents for
-                Your Homes</h3>
-                <p class="blog-card-text">Best in hanging baskets. Prefers medium to high light.</p>
-                <a href="." class="blog-link">Read More &rarr;</a>
-            
-            </div>
-            <div>
-                <img src="/images/card03.jpg" alt="plant">
-                <div class="blog-time">
-                    <time datetime="2025-09-15">September 15</time>
-                    <span>I Read in 3 minutes</span>
-                </div>
-                <h2 class="blog-card-title">Cacti & Succulent
-                Care Tips</h2>
-                <p class="blog-card-text">Cacti and succulents thrive in containers and because most are.</p>
-                <a href="." class="blog-link">Read More &rarr;</a>
-            
-            </div>
-            <div>
-                <img src="/images/card04.jpg" alt="plant">
-                <div class="blog-time">
-                    <time datetime="2025-09-15">September 15</time>
-                    <span>I Read in 2 minutes</span>
-                </div>
-                <h2 class="blog-card-title">Best Houseplants
-                Room by Room</h2>
-                <p class="blog-card-text">The benefits of houseplants are endless. In addition to..</p>
-                <a href="." class="blog-link">Read More &rarr;</a>
-            
-            </div>
-        </div>
-    </section>
-            
-
-                    
         </section>
-        
-    </main>
-    
-</body>
-</html>
 
+                <div class="container pagination-container">
+                    <div class="pagination-wrapper">
+                        <ul class="pagination">
+                            <li><a href="." class="active">1</a></li>
+                            <li><a href=".">2</a></li>
+                            <li><a href=".">3</a></li>
+                            <li><a href=".">4</a></li>
+                            <li><a href="." class="next">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+        <section class="container find-more">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/images/plant14.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2 class="find-more-title">Summer cactus
+                                & succulents</h2>
+                            <p class="find-more-text">We are an online plant shop offering a wide range of cheap and
+                                trendy plants</p>
+                            <a href="." class="card-btn">Find More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/images/plant15.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h2 class="find-more-title">Styling Trends
+                                & much mores</h2>
+                            <p class="find-more-text">We are an online plant shop offering a wide range of cheap and
+                                trendy plants</p>
+                            <a href="." class="card-btn">Find More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="container blog-cards">
+                <h2 class="blog-title">Our Blog Posts</h2>
+                <p class="blog-text">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                <div class="container-blog">
+                    <div>
+                        <img src="/images/card01.jpg" alt="plant">
+                        <div class="blog-time">
+                            <time datetime="2025-09-12">September 12</time>
+                            <span>I Read in 6 minutes</span>
+                        </div>
+                        <h3 class="blog-card-title">Cactus & Succulent
+                            Care Tips</h3>
+                        <p class="blog-card-text">Cacti are succulents are easy care plants for any home or patio.</p>
+                        <a href="." class="blog-link">Read More &rarr;</a>
+                    </div>
+                    <div>
+                        <img src="/images/card02.jpg" alt="plant">
+                        <div class="blog-time">
+                            <time datetime="2025-09-13">September 13</time>
+                            <span>I Read in 2 minutes</span>
+                        </div>
+                        <h3 class="blog-card-title">Top 10 Succulents for
+                            Your Homes</h3>
+                        <p class="blog-card-text">Best in hanging baskets. Prefers medium to high light.</p>
+                        <a href="." class="blog-link">Read More &rarr;</a>
+                    </div>
+                    <div>
+                        <img src="/images/card03.jpg" alt="plant">
+                        <div class="blog-time">
+                            <time datetime="2025-09-15">September 15</time>
+                            <span>I Read in 3 minutes</span>
+                        </div>
+                        <h2 class="blog-card-title">Cacti & Succulent
+                            Care Tips</h2>
+                        <p class="blog-card-text">Cacti and succulents thrive in containers and because most are.</p>
+                        <a href="." class="blog-link">Read More &rarr;</a>
+                    </div>
+                    <div>
+                        <img src="/images/card04.jpg" alt="plant">
+                        <div class="blog-time">
+                            <time datetime="2025-09-15">September 15</time>
+                            <span>I Read in 2 minutes</span>
+                        </div>
+                        <h2 class="blog-card-title">Best Houseplants
+                            Room by Room</h2>
+                        <p class="blog-card-text">The benefits of houseplants are endless. In addition to..</p>
+                        <a href="." class="blog-link">Read More &rarr;</a>
+                    </div>
+                </div>
+        </section>
+
+
+
+        
+
+    </main>
+
+</body>
+
+</html>

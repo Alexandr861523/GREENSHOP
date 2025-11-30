@@ -70,7 +70,6 @@ body {
 }
 
 .register-text {
-   
     font-size: 13px;
     line-height: 16px;
     color: #3D3D3D;
@@ -100,8 +99,7 @@ body {
     padding-bottom: 12px;
     padding-left: 14px;
     font-size: 14px;
-    
-    box-sizing: border-box;
+
 }
 
 .networks {
@@ -114,7 +112,6 @@ body {
 .networks-button {
     width: 300px;
     height: 40px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +152,6 @@ body {
 }
 
 
-
 .header-item {
    text-decoration: none;
    margin-right: 50px;
@@ -168,7 +164,6 @@ body {
 
 .menu-link {
     text-decoration: none;
-    
     font-size: 16px;
     line-height: 100%;
     color: #3D3D3D;
@@ -183,7 +178,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-   
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
@@ -194,7 +188,6 @@ body {
 
 .container-planet {
     display: flex;
-    
 }
 
 .section-title {
@@ -219,7 +212,6 @@ body {
 }
 
 .description-text {
-    
     font-size: 14px;
     line-height: 24px;
     color: #727272;
@@ -275,7 +267,6 @@ body {
 .container-plants {
     display: flex;
     width: 100%;
-    box-sizing: border-box;
     margin-top: 50px;
 }
 
@@ -293,30 +284,15 @@ body {
 .advertising-picture {
    margin-top: auto;
    
-    
 }
 
 .plant-table {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    
 }
 
-
-
-.picture-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 33px;
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    box-sizing: border-box;
-}
 
 .plant-card {
     list-style: none;
@@ -327,8 +303,6 @@ body {
     text-decoration: none;
     margin-bottom: 90px;
     color: #3D3D3D;
-    
-    
 }
 
 .categories-item:hover {
@@ -344,8 +318,6 @@ body {
     align-items: center;
 }
 
-
-
 .plant-list li:last-child {
     margin-right: 0;
 }
@@ -353,7 +325,6 @@ body {
 .plant-item {
     text-decoration: none;
     color: #3D3D3D;
-    
     font-size: 15px;
 }
 
@@ -388,7 +359,7 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    box-sizing: border-box;
+    
 }
 
 
@@ -408,7 +379,6 @@ body {
 }
 
 .plant-picture-text {
-    
     font-size: 16px;
     color: #3D3D3D;
     margin-bottom: 6px;
@@ -442,7 +412,6 @@ body {
 
 .card-text {
     text-align: right;
-    width: 65%;
     flex-grow: 1;
 }
 
@@ -450,11 +419,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
     width: 100%;
     max-width: 1200px;
     margin: 50px auto 0;
-    box-sizing: border-box;
     padding: 0 15px;
 }
 
@@ -472,13 +439,11 @@ body {
     flex-direction: column;
     gap: 24px;
     min-width: 0;
-       
 }
 
 
 .plant-table {
     display: block;
-    
 }
 
 
@@ -489,29 +454,84 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    box-sizing: border-box;
+    
 }
 
+             /* panigation */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    
+}
+
+.pagination-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 15px;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    list-style: none;
+}
+
+.pagination a {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #46A358;
+    border-radius: 6px;
+    color: #46A358;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.pagination a:hover {
+    background-color: #46A358;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #46A358;
+    color: white;
+}
+
+
+               /* find more */
 .find-more {
     flex: 0 0 100%;
     order: 999;
     width: 100%;
     max-width: 1200px;
-    box-sizing: border-box;
+    margin-top: 65px;
     
 }
 
 .find-more-title {
     font-weight: 900;
+    font-size: 18px;
     color: #3D3D3D;
     text-transform: uppercase;
     
 }
 
 .find-more-text {
+   color: #727272;
+
    
-    color: #727272;
-    
 }
 
 .card-btn {
@@ -537,30 +557,12 @@ body {
 
 .card-text {
     text-align: right;
-    
-}
-
-
-
-.find-more,
-.blog-cards {
-    flex: 0 0 100%;
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 30px auto 0;
-   
-}
-
-
-.find-more {
-    order: 1;
+        
 }
 
 .blog-cards {
-    order: 2;
     margin-bottom: 50px;
-    margin-bottom: 138px;
+    margin-top: 138px;
 }
 
 .container-blog {

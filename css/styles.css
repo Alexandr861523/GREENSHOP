@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 26px;
     margin-bottom: 40px;
 }
 
@@ -139,6 +139,106 @@ body {
     margin: 0 auto;
 }
 
+.navigation>ul {
+    display: flex;
+}
+
+.header-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+   position: absolute;
+    left: 0;
+    top: 100%;
+    width: 188px;
+    display: none;
+    padding-top: 12px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sub-menu li {
+    position: relative;
+    background: #EDF6EE;
+    
+}
+
+.sub-menu > li:hover .second-menu {
+   opacity: 1;
+   visibility: visible;
+}
+.sub-menu>li:hover > a {
+    color: #FFFFFF;
+    font-weight: 700;
+    background: #1A712A;
+}
+
+.sub-menu li:has(.second-menu)::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+
+.sub-menu>li:hover::after {
+    transform: rotate(-135deg);
+}
+
+
+.sub-menu a {
+    display: block; 
+    padding: 5px;
+    
+}
+
+.sub-menu,
+.sub-menu li,
+.second-menu,
+.second-menu li {
+    list-style: none;
+   
+}
+
+.sub-menu a,
+.second-menu a {
+    text-decoration: none;
+    color: #3D3D3D;
+   
+}
+
+.sub-menu a:hover,
+.second-menu a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 700;
+    
+}
+
+.header-item a:hover {
+    opacity: 0.7;
+    color: #FFFFFF;
+    background: #1A712A;
+}
+
+.second-menu {
+    background: #EDF6EE;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    width: 178px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear;
+}
+
 .header-navigation {
     flex-grow: 1;
 }
@@ -155,6 +255,7 @@ body {
 .header-item {
    text-decoration: none;
    margin-right: 50px;
+   position: relative;
         
 }
 

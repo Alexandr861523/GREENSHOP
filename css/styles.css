@@ -38,17 +38,17 @@
 
 body {
     font: 14px/1.2 "CeraPro", "Arial", "Helvetica", sans-serif;
-    
+    margin: 0 auto;
 }
 
 
 
-                    /* my form */
+/* my form */
 .page-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 26px;
     margin-bottom: 40px;
 }
 
@@ -66,7 +66,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 41px; 
+    margin-top: 41px;
 }
 
 .register-text {
@@ -81,7 +81,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     color: #727272;
-    
+
 }
 
 .form-container {
@@ -89,7 +89,7 @@ body {
     flex-direction: column;
     gap: 16px;
     border: 1px;
-    
+
 }
 
 .form-container input {
@@ -123,7 +123,7 @@ body {
     color: #46A358;
 }
 
-                          /* header */
+/* header */
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -131,7 +131,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .container {
@@ -139,12 +139,21 @@ body {
     margin: 0 auto;
 }
 
+.navigation>ul {
+    display: flex;
+}
+
+.header-item:hover .sub-menu {
+    display: block;
+}
+
+
 .header-navigation {
     flex-grow: 1;
 }
 
 .navigation-list {
-    list-style: none;    
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -153,9 +162,10 @@ body {
 
 
 .header-item {
-   text-decoration: none;
-   margin-right: 50px;
-        
+    text-decoration: none;
+    margin-right: 50px;
+    position: relative;
+
 }
 
 .header-item:last-child {
@@ -181,7 +191,7 @@ body {
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
-    
+
 }
 
 /* section planet */
@@ -216,7 +226,7 @@ body {
     line-height: 24px;
     color: #727272;
 }
-              
+
 .shop-btn {
     display: inline-flex;
     justify-content: center;
@@ -248,21 +258,23 @@ body {
     background-color: #46A358;
     text-decoration: none;
     gap: 4px;
-        
+
 }
 
 .login-btn:hover {
     background-color: #3D8F4A;
 }
 
-.my-form, .networks  {
+.my-form,
+.networks {
     display: flex;
     flex-direction: column;
-    align-items: center;            
+    align-items: center;
     justify-content: center;
-        
+
 }
-               /* section table */
+
+/* section table */
 
 .container-plants {
     display: flex;
@@ -278,19 +290,22 @@ body {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 150px;
+    width: 310px;
+    gap: 20px;
+
 }
 
 .advertising-picture {
-   margin-top: auto;
-   
+    margin-top: auto;
+
 }
 
 .plant-table {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -329,13 +344,13 @@ body {
 }
 
 .plant-item:hover {
-   font-weight: 700;
-   color: #3D3D3D;
-   border-bottom: 3px solid #46A358;
-   padding-bottom: 7px;
+    font-weight: 700;
+    color: #3D3D3D;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 7px;
 }
 
-.active {  
+.active {
     text-decoration: none;
     font-weight: 700;
     color: #46A358;
@@ -359,7 +374,7 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    
+
 }
 
 
@@ -370,8 +385,28 @@ body {
 }
 
 .plant-card {
-    margin-top: 31px;
+    margin-top: 41px;
     flex-grow: 1;
+    position: relative;
+}
+
+
+
+.plant-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #46A358;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+
+.plant-card:hover::before {
+    opacity: 1;
 }
 
 .plant-card img {
@@ -426,12 +461,7 @@ body {
 }
 
 
-.advertising-list {
-    width: 310px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+
 
 .plants-right {
     flex: 1 1 0;
@@ -454,15 +484,15 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
+
 }
 
-             /* panigation */
+/* panigation */
 .pagination-container {
     display: flex;
     justify-content: center;
     margin-top: 90px;
-    
+
 }
 
 .pagination-wrapper {
@@ -470,6 +500,7 @@ body {
     display: flex;
     justify-content: flex-end;
     padding: 20px 15px;
+    margin-top: 90px;
 }
 
 .pagination {
@@ -510,14 +541,14 @@ body {
 }
 
 
-               /* find more */
+/* find more */
 .find-more {
     flex: 0 0 100%;
     order: 999;
     width: 100%;
     max-width: 1200px;
     margin-top: 65px;
-    
+
 }
 
 .find-more-title {
@@ -525,13 +556,13 @@ body {
     font-size: 18px;
     color: #3D3D3D;
     text-transform: uppercase;
-    
+
 }
 
 .find-more-text {
-   color: #727272;
+    color: #727272;
 
-   
+
 }
 
 .card-btn {
@@ -557,7 +588,7 @@ body {
 
 .card-text {
     text-align: right;
-        
+
 }
 
 .blog-cards {
@@ -570,15 +601,19 @@ body {
     gap: 44px;
 }
 
+.blog-card-part {
+    background: #FBFBFB;
+}
+
 .blog-title {
-   text-align: center;
+    text-align: center;
 }
 
 .blog-text {
-text-align: center;
-margin-bottom: 35px;
+    text-align: center;
+    margin-bottom: 35px;
 
-color: #727272;
+    color: #727272;
 }
 
 .blog-time {
@@ -592,6 +627,7 @@ color: #727272;
     text-decoration: none;
     font-weight: 500;
 }
+
 .blog-link:hover {
     color: #46A358;
 }
@@ -600,10 +636,10 @@ color: #727272;
     font-weight: 700;
     font-size: 20px;
     padding-left: 15px;
-}   
+}
 
 .blog-card-text {
-    
+
     color: #727272;
     padding-left: 15px;
 }

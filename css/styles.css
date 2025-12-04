@@ -278,19 +278,19 @@ body {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 165px;
+    width: 310px;
+    gap: 20px;
 }
 
 .advertising-picture {
    margin-top: auto;
-   
 }
 
 .plant-table {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -339,7 +339,9 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: #46A358;
+    position: relative;
 }
+
 
 .active:hover {
     color: #46A358;
@@ -362,8 +364,6 @@ body {
     
 }
 
-
-
 .float-right {
     display: flex;
     align-items: center;
@@ -375,29 +375,55 @@ body {
     position: relative;
 }
 
+
 .icons-arise {
-    position: absolute;
-    display: flex;
+    list-style: none;
+    margin: -12px 0 1px;
+    padding: 0;
+    display: flex;  
     justify-content: center;
-    gap: 26px;
-    top: 233px;
-    left: 67px;
+    gap: 10px;
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s ease;
+    transition: opacity .22s ease, transform .22s ease;
 }
-
 
 .plant-card:hover .icons-arise {
     opacity: 1;
+    transform: translateY(0);
     pointer-events: auto;
+}
+
+.icons-arise li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.icons-arise li a {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+
+.icons-arise li a img {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .sale-arise {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
-    transition: 0.3s ease;
     width: 80px;
     height: 29px;
     color: #FBFBFB;
@@ -405,19 +431,15 @@ body {
     text-align: center;
     padding-top: 7px;
     font-weight: 500;
-    top: 1px;
-
-}
-
-.plant-card:hover .sale-arise {
-    opacity: 1;
-    pointer-events: auto;
+    top: -10px;
+    left: -5px;
+    z-index: 1;
 }
 
 .plant-card::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -461,8 +483,6 @@ body {
     background-color: #FBFBFB;
 }
 
-
-
 .card-img img {
     margin-top: -30px;
 }
@@ -482,14 +502,6 @@ body {
     padding: 0 15px;
 }
 
-
-.advertising-list {
-    width: 310px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .plants-right {
     flex: 1 1 0;
     display: flex;
@@ -498,11 +510,9 @@ body {
     min-width: 0;
 }
 
-
 .plant-table {
     display: block;
 }
-
 
 .picture-list {
     list-style: none;
@@ -511,7 +521,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
 }
 
              /* panigation */
@@ -575,7 +584,6 @@ body {
     width: 100%;
     max-width: 1200px;
     margin-top: 65px;
-    
 }
 
 .find-more-title {
@@ -583,13 +591,10 @@ body {
     font-size: 18px;
     color: #3D3D3D;
     text-transform: uppercase;
-    
 }
 
 .find-more-text {
    color: #727272;
-
-   
 }
 
 .card-btn {
@@ -615,7 +620,6 @@ body {
 
 .card-text {
     text-align: right;
-        
 }
 
 .blog-cards {
@@ -634,10 +638,9 @@ body {
 }
 
 .blog-text {
-text-align: center;
-margin-bottom: 35px;
-
-color: #727272;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #727272;
 }
 
 .blog-time {
@@ -662,7 +665,10 @@ color: #727272;
 }   
 
 .blog-card-text {
-    
     color: #727272;
     padding-left: 15px;
+}
+
+.blog-card-part {
+    background: #FBFBFB;
 }

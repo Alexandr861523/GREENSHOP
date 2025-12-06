@@ -153,100 +153,7 @@ body {
 
                /* sub menu */
 
-.sub-menu {
-    /* position: absolute;
-    left: 0;
-    top: 100%;
-    width: 188px;
-    /* display: none; */
-    /* padding-top: 12px;
-    list-style: none;
-    text-decoration: none; */ *
-}
 
-.sub-menu li {
-    /* position: relative;
-    background: #EDF6EE; */
-
-}
-
-.sub-menu > li:hover .second-menu {
-    /* opacity: 1;
-    visibility: visible; */
-}
-
-.sub-menu > li:hover > a {
-    /* color: #FFFFFF;
-    font-weight: 700;
-    background: #1A712A; */
-}
-
-.sub-menu li:has(.second-menu)::after {
-    /* content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
-    transform: rotate(45deg);
-    position: absolute;
-    top: 12px;
-    right: 15px; */
-}
-
-
-.sub-menu > li:hover::after {
-    /* transform: rotate(-135deg); */
-}
-
-
-.sub-menu a {
-    /* display: block;
-    padding: 5px; */
-
-}
-
-.sub-menu,
-.sub-menu li,
-.second-menu,
-.second-menu li {
-    /* list-style: none; */
-
-}
-
-.sub-menu a,
-.second-menu a {
-    /* text-decoration: none;
-    color: #3D3D3D; */
-
-}
-
-.sub-menu a:hover,
-.second-menu a:hover {
-    /* text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 700; */
-
-}
-
-.header-item a:hover {
-    /* opacity: 0.7;
-    color: #FFFFFF;
-    background: #1A712A; */
-}
-
-.second-menu {
-    /* background: #EDF6EE;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 178px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s linear; */
-}
-
-/* ====== ОСНОВНОЕ МЕНЮ ====== */
 .navigation-list {
     list-style: none;
     display: flex;
@@ -256,7 +163,7 @@ body {
 
 .header-item {
     position: relative;
-    /* важно для выпадающих меню */
+    
 }
 
 .header-item a {
@@ -264,11 +171,11 @@ body {
     color: #3D3D3D;
 }
 
-/* ====== ПЕРВОЕ ВЫПАДАЮЩЕЕ МЕНЮ ====== */
+
 .sub-menu {
     position: absolute;
     top: 100%;
-    /* под ссылкой Plant Care */
+    
     left: 0;
     width: 188px;
     background: #EDF6EE;
@@ -276,7 +183,7 @@ body {
     list-style: none;
     display: none;
     z-index: 1;
-    /* выше всей страницы */
+   
 }
 
 .header-item:hover>.sub-menu {
@@ -300,23 +207,23 @@ body {
     font-weight: 700;
 }
 
-/* ====== ВТОРОЕ ВЫПАДАЮЩЕЕ МЕНЮ ====== */
+
 .second-menu {
     position: absolute;
     top: 0;
-    /* ВЫРАВНИВАЕМ ПО ВЕРХУ ПЕРВОГО МЕНЮ */
+ 
     left: 100%;
-    /* справа от Priming */
+    
     width: 178px;
     background: #EDF6EE;
     list-style: none;
     padding: 10px 0;
     display: none;
     z-index: 2;
-    /* ещё выше */
+    
 }
 
-/* показать второе меню */
+
 .sub-menu li:hover>.second-menu {
     display: block;
 }
@@ -581,7 +488,7 @@ body {
 .plant-card:hover .icons-arise {
     opacity: 1;
     transform: translateY(0);
-    pointer-events: auto;
+    
 }
 
 .icons-arise li {
@@ -862,4 +769,142 @@ body {
 
 .blog-card-part {
     background: #FBFBFB;
+}
+
+                /* footer */
+.footer-top {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 24px;
+    gap: 62px;
+    
+}
+
+
+
+.footer-placeholder {
+    display: flex;
+    margin-top: 25px;
+}
+
+.footer-placeholder input {
+    width: 354px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.footer-placeholder a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 40px;
+    background-color: #46A358;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-card-title {
+    
+    font-weight: 700;
+}
+.top-text {
+    font-size: 13px;
+    line-height: 22px;
+    color: #727272;
+    margin-top: 50px;
+    
+}
+.footer-plant {
+    display: flex;
+    width: 67%;
+    gap: 61px;
+}
+
+.footer-card {
+    width: 33%;
+}
+
+.card-garden {
+    width: 33%;
+    background-image: url('../images/garden-icon.svg');
+    background-size: auto 92px;
+    background-repeat: no-repeat;
+    padding-top: 135px;
+
+}
+
+.card-plant {
+    width: 33%;
+    background-image: url('../images/plantren-icon.svg');
+    background-size: auto 92px;
+    background-repeat: no-repeat;
+    padding-top: 135px;
+}
+
+.card-watering {
+    width: 33%;
+    background-image: url('../images/watering-icon.svg');
+    background-size: auto 92px;
+    background-repeat: no-repeat;
+    padding-top: 135px;
+}
+
+.footer-top-text {
+    line-height: 22px;
+    color: #727272;
+}
+
+.footer-middle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 88px;
+    background: linear-gradient(to right,
+        #EDF6EF,
+        #52C368);
+}
+
+.footer-middle-list {   
+    display: flex;
+    justify-content: space-between;
+    gap: 155px;
+    list-style: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-bottom-title {
+    padding-top: 33px;
+}
+
+.footer-bottom-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    line-height: 30px;
+    color: #3D3D3D;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom-media {
+    margin-top: 33px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #3D3D3D;
+    padding: 20px 0;
 }

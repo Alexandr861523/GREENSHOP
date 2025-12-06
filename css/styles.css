@@ -43,12 +43,12 @@ body {
 
 
 
-                    /* my form */
+/* my form */
 .page-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    gap: 27px;
     margin-bottom: 40px;
 }
 
@@ -66,7 +66,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 41px; 
+    margin-top: 41px;
 }
 
 .register-text {
@@ -81,7 +81,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     color: #727272;
-    
+
 }
 
 .form-container {
@@ -89,7 +89,7 @@ body {
     flex-direction: column;
     gap: 16px;
     border: 1px;
-    
+
 }
 
 .form-container input {
@@ -123,7 +123,7 @@ body {
     color: #46A358;
 }
 
-                          /* header */
+/* header */
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -131,7 +131,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .container {
@@ -139,33 +139,211 @@ body {
     margin: 0 auto;
 }
 
-.navigation>ul {
-    display: flex;
-}
-
-.header-item:hover .sub-menu {
-    display: block;
-}
-
-
 .header-navigation {
     flex-grow: 1;
 }
 
 .navigation-list {
-    list-style: none;    
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
 }
 
+               /* sub menu */
+
+.sub-menu {
+    /* position: absolute;
+    left: 0;
+    top: 100%;
+    width: 188px;
+    /* display: none; */
+    /* padding-top: 12px;
+    list-style: none;
+    text-decoration: none; */ *
+}
+
+.sub-menu li {
+    /* position: relative;
+    background: #EDF6EE; */
+
+}
+
+.sub-menu > li:hover .second-menu {
+    /* opacity: 1;
+    visibility: visible; */
+}
+
+.sub-menu > li:hover > a {
+    /* color: #FFFFFF;
+    font-weight: 700;
+    background: #1A712A; */
+}
+
+.sub-menu li:has(.second-menu)::after {
+    /* content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12px;
+    right: 15px; */
+}
+
+
+.sub-menu > li:hover::after {
+    /* transform: rotate(-135deg); */
+}
+
+
+.sub-menu a {
+    /* display: block;
+    padding: 5px; */
+
+}
+
+.sub-menu,
+.sub-menu li,
+.second-menu,
+.second-menu li {
+    /* list-style: none; */
+
+}
+
+.sub-menu a,
+.second-menu a {
+    /* text-decoration: none;
+    color: #3D3D3D; */
+
+}
+
+.sub-menu a:hover,
+.second-menu a:hover {
+    /* text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700; */
+
+}
+
+.header-item a:hover {
+    /* opacity: 0.7;
+    color: #FFFFFF;
+    background: #1A712A; */
+}
+
+.second-menu {
+    /* background: #EDF6EE;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 178px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear; */
+}
+
+/* ====== ОСНОВНОЕ МЕНЮ ====== */
+.navigation-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    position: relative;
+}
 
 .header-item {
-   text-decoration: none;
-   margin-right: 50px;
-   position: relative;
-        
+    position: relative;
+    /* важно для выпадающих меню */
+}
+
+.header-item a {
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+/* ====== ПЕРВОЕ ВЫПАДАЮЩЕЕ МЕНЮ ====== */
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    /* под ссылкой Plant Care */
+    left: 0;
+    width: 188px;
+    background: #EDF6EE;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    /* выше всей страницы */
+}
+
+.header-item:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    position: relative;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+.sub-menu li:hover>a {
+    background: #1A712A;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ====== ВТОРОЕ ВЫПАДАЮЩЕЕ МЕНЮ ====== */
+.second-menu {
+    position: absolute;
+    top: 0;
+    /* ВЫРАВНИВАЕМ ПО ВЕРХУ ПЕРВОГО МЕНЮ */
+    left: 100%;
+    /* справа от Priming */
+    width: 178px;
+    background: #EDF6EE;
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    z-index: 2;
+    /* ещё выше */
+}
+
+/* показать второе меню */
+.sub-menu li:hover>.second-menu {
+    display: block;
+}
+
+.second-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+.second-menu li:hover>a {
+    background: #1A712A;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+
+        /* sub menu end */
+
+.header-item {
+    text-decoration: none;
+    margin-right: 50px;
+    position: relative;
+
 }
 
 .header-item:last-child {
@@ -191,7 +369,7 @@ body {
     color: #3D3D3D;
     border-bottom: 3px solid #46A358;
     padding-bottom: 25px;
-    
+
 }
 
 /* section planet */
@@ -226,7 +404,7 @@ body {
     line-height: 24px;
     color: #727272;
 }
-              
+
 .shop-btn {
     display: inline-flex;
     justify-content: center;
@@ -258,21 +436,23 @@ body {
     background-color: #46A358;
     text-decoration: none;
     gap: 4px;
-        
+
 }
 
 .login-btn:hover {
     background-color: #3D8F4A;
 }
 
-.my-form, .networks  {
+.my-form,
+.networks {
     display: flex;
     flex-direction: column;
-    align-items: center;            
+    align-items: center;
     justify-content: center;
-        
+
 }
-               /* section table */
+
+/* section table */
 
 .container-plants {
     display: flex;
@@ -288,20 +468,19 @@ body {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 150px;
-    
+    padding-bottom: 165px;
+    width: 310px;
+    gap: 20px;
 }
 
 .advertising-picture {
-   margin-top: auto;
-   
+    margin-top: auto;
 }
 
 .plant-table {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    
 }
 
 
@@ -340,17 +519,19 @@ body {
 }
 
 .plant-item:hover {
-   font-weight: 700;
-   color: #3D3D3D;
-   border-bottom: 3px solid #46A358;
-   padding-bottom: 7px;
+    font-weight: 700;
+    color: #3D3D3D;
+    border-bottom: 3px solid #46A358;
+    padding-bottom: 7px;
 }
 
-.active {  
+.active {
     text-decoration: none;
     font-weight: 700;
     color: #46A358;
+    position: relative;
 }
+
 
 .active:hover {
     color: #46A358;
@@ -370,10 +551,8 @@ body {
     align-items: center;
     gap: 20px;
     width: 100%;
-    
+
 }
-
-
 
 .float-right {
     display: flex;
@@ -387,11 +566,70 @@ body {
 }
 
 
+.icons-arise {
+    list-style: none;
+    margin: -12px 0 1px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .22s ease, transform .22s ease;
+}
+
+.plant-card:hover .icons-arise {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.icons-arise li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.icons-arise li a {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+
+.icons-arise li a img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.sale-arise {
+    position: absolute;
+    opacity: 1;
+    pointer-events: none;
+    width: 80px;
+    height: 29px;
+    color: #FBFBFB;
+    background-color: #46A358;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: 500;
+    top: -10px;
+    left: -5px;
+    z-index: 1;
+}
 
 .plant-card::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -435,8 +673,6 @@ body {
     background-color: #FBFBFB;
 }
 
-
-
 .card-img img {
     margin-top: -30px;
 }
@@ -456,14 +692,6 @@ body {
     padding: 0 15px;
 }
 
-
-.advertising-list {
-    width: 310px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .plants-right {
     flex: 1 1 0;
     display: flex;
@@ -472,11 +700,9 @@ body {
     min-width: 0;
 }
 
-
 .plant-table {
     display: block;
 }
-
 
 .picture-list {
     list-style: none;
@@ -485,15 +711,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
 }
 
-             /* panigation */
+/* panigation */
 .pagination-container {
     display: flex;
     justify-content: center;
     margin-top: 90px;
-    
+
 }
 
 .pagination-wrapper {
@@ -542,14 +767,13 @@ body {
 }
 
 
-               /* find more */
+/* find more */
 .find-more {
     flex: 0 0 100%;
     order: 999;
     width: 100%;
     max-width: 1200px;
     margin-top: 65px;
-    
 }
 
 .find-more-title {
@@ -557,13 +781,10 @@ body {
     font-size: 18px;
     color: #3D3D3D;
     text-transform: uppercase;
-    
 }
 
 .find-more-text {
-   color: #727272;
-
-   
+    color: #727272;
 }
 
 .card-btn {
@@ -589,7 +810,6 @@ body {
 
 .card-text {
     text-align: right;
-        
 }
 
 .blog-cards {
@@ -600,20 +820,17 @@ body {
 .container-blog {
     display: flex;
     gap: 44px;
-}
-.blog-card-part {
-    background: #FBFBFB;
+    background-color: #FBFBFB;
 }
 
 .blog-title {
-   text-align: center;
+    text-align: center;
 }
 
 .blog-text {
-text-align: center;
-margin-bottom: 35px;
-
-color: #727272;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #727272;
 }
 
 .blog-time {
@@ -627,6 +844,7 @@ color: #727272;
     text-decoration: none;
     font-weight: 500;
 }
+
 .blog-link:hover {
     color: #46A358;
 }
@@ -635,10 +853,13 @@ color: #727272;
     font-weight: 700;
     font-size: 20px;
     padding-left: 15px;
-}   
+}
 
 .blog-card-text {
-    
     color: #727272;
     padding-left: 15px;
+}
+
+.blog-card-part {
+    background: #FBFBFB;
 }

@@ -124,6 +124,7 @@ body {
 }
 
 /* header */
+
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -628,6 +629,7 @@ body {
 }
 
 /* panigation */
+
 .pagination-container {
     display: flex;
     justify-content: center;
@@ -682,6 +684,7 @@ body {
 
 
 /* find more */
+
 .find-more {
     flex: 0 0 100%;
     order: 999;
@@ -695,10 +698,17 @@ body {
     font-size: 18px;
     color: #3D3D3D;
     text-transform: uppercase;
+    max-width: 150px;
+    margin-left: auto;
 }
 
 .find-more-text {
     color: #727272;
+    max-width: 292px;
+}
+
+.card {
+    max-width: 586px;
 }
 
 .card-btn {
@@ -778,12 +788,14 @@ body {
     background: #FBFBFB;
 }
 
-                /* footer */
+  /* footer */
+
 .footer-top {
     display: flex;
     margin-top: 100px;
     margin-bottom: 24px;
     gap: 30px;
+    background: #FBFBFB;
     
 }
 
@@ -819,21 +831,19 @@ body {
     background-color: #3b8f4b;
 }
 
-
-
 .footer-card-title {
     color: #3D3D3D;
-    font-style: 18px;
+    font-size: 18px;
     line-height: 16px;
-    /* font-weight: 700; */
 }
+
 .top-text {
     font-size: 13px;
     line-height: 22px;
     color: #727272;
     margin-top: 40px;
-    
 }
+
 .footer-plant {
     display: flex;
     width: 67%;
@@ -841,59 +851,51 @@ body {
 }
 
 
-
 .footer-plant > div {
     position: relative;
-    /* padding-right: 30px; */
-    /* место под линию */
 }
 
-/* линия между карточками */
+
 .footer-plant > div:not(:last-child)::after {
     content: "";
     position: absolute;
     top: 120px;
     right: -30px;
     transform: translateY(-50%);
-
     width: 2px;
     height: 230px;
     background-color: #46A3581A;
-    /* #46A3581A */
+    
 }
 
 .footer-card {
     width: 33%;
 }
 
-.card-garden {
+.card-item {
     width: 33%;
-    background-image: url('../images/garden-icon.svg');
     background-size: auto 92px;
     background-repeat: no-repeat;
     padding-top: 100px;
     font-size: 17px;
     line-height: 16px;
+}
+
+.card-garden {
+    background-image: url('../images/garden-icon.svg');
+    
 }
 
 .card-plant {
-    width: 33%;
+    
     background-image: url('../images/plantren-icon.svg');
-    background-size: auto 92px;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    font-size: 17px;
-    line-height: 16px;
+    
 }
 
 .card-watering {
-    width: 33%;
+    
     background-image: url('../images/watering-icon.svg');
-    background-size: auto 92px;
-    background-repeat: no-repeat;
-    padding-top: 100px;
-    font-size: 17px;
-    line-height: 16px;
+   
 }
 
 .footer-top-text {
@@ -914,14 +916,13 @@ body {
     background: linear-gradient(to right,
         #EDF6EF,
         #52C368);
-        gap: 125px;
+    gap: 115px;
 }
 
 
 .footer-middle-list li {
     position: relative;
     padding-left: 25px;
-    /* место под иконку */
 }
 
 .footer-middle-list li a {
@@ -929,7 +930,7 @@ body {
     color: #3D3D3D;
 }
 
-/* ОБЩЕЕ */
+
 .footer-middle-list li::before {
     content: '';
     position: absolute;
@@ -939,12 +940,50 @@ body {
     height: 16px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+.icon-location {
+    position: relative;
+    padding-left: 29px;
+    margin-left: 70px;
+}
+
+
+.icon-location::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/location.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
     
 }
 
-/* ИКОНКИ */
-.icon-location::before {
-    background-image: url("../images/location.svg");
+.icon-location a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-style: normal;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+.icon-location a:hover {
+    font-weight: 500;
+}
+
+
+.footer-middle-list address a {
+    text-decoration: none;
+    color: #3D3D3D;
+    line-height: 1.4;
+    display: inline-block;
+    max-width: 180px;
+   word-wrap: break-word;
 }
 
 .icon-email::before {
@@ -962,11 +1001,14 @@ body {
 .footer-middle-list {   
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 125px;
-    /* margin-left: 55px; */
     list-style: none;
     padding-right: 22px;
-    
+}
+
+.footer-middle-list a:hover {
+    font-weight: 500;
 }
 
 .footer-bottom {
@@ -975,6 +1017,14 @@ body {
     margin-bottom: 50px;
     border-bottom: 1px solid #46A35833;
     padding-bottom: 27px;
+    background: #FBFBFB;
+   
+}
+
+
+.footer-bottom-start {
+    margin-left: 25px;
+    max-width: 137px;
 }
 
 .footer-bottom-title {
@@ -990,6 +1040,13 @@ body {
     color: #3D3D3D;
     padding: 0;
     margin: 0;
+    
+}
+
+.footer-bottom-list li {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 137px;
 }
 
 .footer-bottom-media {
@@ -1000,4 +1057,14 @@ body {
     text-align: center;
     color: #3D3D3D;
     padding: 20px 0;
+}
+
+.footer-bottom-list a {
+    text-decoration: none;
+        color: #3D3D3D;
+}
+
+.footer-bottom-list a:hover {
+    font-weight: 500;
+
 }

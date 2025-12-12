@@ -792,8 +792,8 @@ body {
 
 .footer-top {
     display: flex;
-    margin-top: 100px;
-    margin-bottom: 24px;
+    margin-top: 20px;
+    /* margin-bottom: 24px; */
     gap: 30px;
     background: #FBFBFB;
     
@@ -841,13 +841,21 @@ body {
     font-size: 13px;
     line-height: 22px;
     color: #727272;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .footer-plant {
     display: flex;
     width: 67%;
     gap: 61px;
+    margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 25px;
+}
+
+.card-title {
+    font-size: 17px;
+    line-height: 16px;
 }
 
 
@@ -859,17 +867,20 @@ body {
 .footer-plant > div:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 120px;
+    top: 110px;
     right: -30px;
     transform: translateY(-50%);
-    width: 2px;
-    height: 230px;
+    width: 1px;
+    height: 187px;
     background-color: #46A3581A;
     
 }
 
 .footer-card {
     width: 33%;
+    margin-right: 25px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .card-item {
@@ -879,6 +890,7 @@ body {
     padding-top: 100px;
     font-size: 17px;
     line-height: 16px;
+    
 }
 
 .card-garden {
@@ -1036,10 +1048,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     list-style: none;
-    line-height: 30px;
     color: #3D3D3D;
     padding: 0;
     margin: 0;
+    
     
 }
 
@@ -1061,10 +1073,28 @@ body {
 
 .footer-bottom-list a {
     text-decoration: none;
-        color: #3D3D3D;
+    color: #3D3D3D;
 }
 
 .footer-bottom-list a:hover {
     font-weight: 500;
+    
+}
 
+.footer-bottom-middle {
+    max-width: 137px;
+}
+
+.footer-bottom-last {
+    max-width: 93px;
+}
+
+.footer-bottom-list li {
+    margin-bottom: 15px;
+    
+}
+
+.footer-bottom-list li:last-child {
+    margin-bottom: 0;
+    
 }

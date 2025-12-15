@@ -1057,6 +1057,8 @@ body {
 .footer-bottom-list li {
     white-space: normal;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 15px;
     
 }
 
@@ -1080,14 +1082,13 @@ body {
     
 }
 
-
-
-.footer-bottom-list li {
-    margin-bottom: 15px;
-    
-}
-
 .footer-bottom-list li:last-child {
     margin-bottom: 0;
     
+}
+
+.footer-bottom-start,
+.footer-bottom-middle,
+.footer-bottom-last {
+    max-width: 137px;
 }

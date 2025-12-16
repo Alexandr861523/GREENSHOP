@@ -1029,6 +1029,7 @@ body {
     border-bottom: 1px solid #46A35833;
     padding-bottom: 27px;
     background: #FBFBFB;
+    gap: 20px;
    
 }
 
@@ -1064,6 +1065,7 @@ body {
 
 .footer-bottom-media {
     margin-top: 33px;
+    flex: 0 0 34%;
 }
 
 .footer-copyright {
@@ -1090,5 +1092,5 @@ body {
 .footer-bottom-start,
 .footer-bottom-middle,
 .footer-bottom-last {
-    max-width: 137px;
+    flex: 0 0 22%;
 }

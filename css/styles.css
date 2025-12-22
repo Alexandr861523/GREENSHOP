@@ -837,7 +837,9 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    transition: 0.2s;
+    transition: background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .pagination a:hover {
@@ -1275,16 +1277,29 @@ body {
     width: 30px;
     height: 30px;
     border: 1px solid #46A35833;
+    transition: font-weight 0.2s ease;
+}
+
+.social-list li a:hover {
+    font-weight: 500;
+   
+}
+
+
+.social-list li a:hover .social-icon {
+    fill: #46A358;
 }
 
 .social-icon {
     width: 16px;
     height: 16px;
     fill: #3D3D3D;
-    transition: fill 0.2s ease;
+    transition: fill 0.2s ease, transform 0.2s ease;
 }
 
-
+.social-list li a:hover .social-icon {
+    transform: scale(1.15);
+}
 
 .footer-copyright {
     text-align: center;

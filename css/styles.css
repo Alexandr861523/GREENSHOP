@@ -42,6 +42,17 @@ body {
 }
 
 
+      
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 
 /* my form */
 .page-title {
@@ -1326,4 +1337,300 @@ body {
 .footer-bottom-middle,
 .footer-bottom-last {
     flex: 0 0 22%;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+   .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .header-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+    
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    
+    .container-planet {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        line-height: 1.1;
+    }
+
+    
+    .picture-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   
+    .footer-middle {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 15px;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom-start,
+    .footer-bottom-middle,
+    .footer-bottom-last {
+        flex: 1 1 45%;
+    }
+}
+
+
+@media (max-width: 768px) {
+   
+    .section-title {
+        font-size: 36px;
+    }
+
+    
+    .container-plants {
+        flex-direction: column;
+    }  
+
+    .advertising-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .picture-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .container-blog {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-plant {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-plant>div:not(:last-child)::after {
+        display: none;
+    }
+
+   
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom-media {
+        flex: 1 1 100%;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    
+    .header-actions {
+        gap: 15px;
+        margin-right: 0;
+    }
+
+    .login-btn {
+        width: auto;
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+   
+    .welcome-text {
+        margin-top: 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    
+    .picture-list {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .form-container input,
+    .register-button,
+    .networks-button {
+        width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: auto;
+    }
+
+   
+    .footer-middle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: auto;
+    }
+
+    .footer-middle-list {
+        flex-direction: column;
+        gap: 20px;
+        padding-right: 0;
+    }
+
+    .adress-icon-location {
+        margin-left: 0;
+    }
+
+   
+    .pagination-wrapper {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    
+    .container,
+    .header-container,
+    .container-plants {
+        padding: 0 10px;
+    }
+
+    
+    .section-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .welcome-text,
+    .description-text {
+        font-size: 13px;
+    }
+
+    
+    .shop-btn,
+    .card-btn {
+        width: 100%;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+   
+    .form-container input,
+    .register-button,
+    .networks-button {
+        width: 100%;
+    }
+
+   
+    .picture-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+   
+    .footer-middle {
+        padding: 15px 10px;
+    }
+
+    .footer-bottom {
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 280px) {
+
+   
+    .header-actions {
+        gap: 10px;
+    }
+
+    .login-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+   
+    .section-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+   
+    body {
+        font-size: 13px;
+    }
+
+    
+    .shop-btn,
+    .card-btn,
+    .register-button {
+        font-size: 13px;
+        height: 36px;
+    }
+
+    
+    .social-list {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .social-list li a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .social-icon {
+        width: 14px;
+        height: 14px;
+    }
 }
